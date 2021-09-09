@@ -13,7 +13,7 @@ function App() {
   }, [next]);
 
   const nextPage = () => {
-    setNext(next + 1);
+    next === 34 ? setNext(1) : setNext(next + 1);
   };
   const downPage = () => {
     next > 1 ? setNext(next - 1) : setNext(next);
